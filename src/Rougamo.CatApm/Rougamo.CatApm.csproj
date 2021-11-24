@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+    <Version>1.0.0</Version>
+    <Authors>ihourglass</Authors>
+    <Description>rougamo cat code weaver</Description>
+    <PackageTags>AOP APM CAT</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <PackageOutputPath>$(SolutionDir)nugets</PackageOutputPath>
+    <PackageProjectUrl>https://github.com/inversionhourglass/Rougamo.CatApm</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/inversionhourglass/Rougamo.CatApm.git</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/inversionhourglass/Rougamo.CatApm/master/rougamo-catapm.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rougamo.APM.Abstractions" Version="1.0.0" />
+    <PackageReference Include="Rougamo.Fody" Version="1.0.1" IncludeAssets="all" PrivateAssets="contentfiles;analyzers" />
+  </ItemGroup>
+
+</Project>
